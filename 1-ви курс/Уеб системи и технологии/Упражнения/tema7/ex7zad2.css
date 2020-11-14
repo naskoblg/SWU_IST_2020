@@ -1,0 +1,26 @@
+table.chess {
+    margin-left: auto;
+    margin-right: auto;
+    background: #eed5b8;
+    border-collapse: collapse;
+}
+td.chess {
+    width: 70px; height: 70px; 
+    border: 1px solid #6d4311; 
+    font-size: 3em;
+    font: Tahoma;
+    text-align: center;
+    padding: 2px 8px 2px 8px;
+    }
+tr.chess:nth-child(odd) td.chess:nth-child(even),
+tr.chess:nth-child(even) td.chess:nth-child(odd) {
+    background: white;
+}
+
+td.heads {
+    border: none; 
+    font: 1.5em Tahoma;
+    color: #6d4311;
+    padding: 5px 10px;
+    background: #fbfbd4    
+}

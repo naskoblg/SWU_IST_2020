@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>Уеб системи и технологии – тема 7</title>
+ <style>
+ table,th,td
+ {
+ border:1px solid blue;
+ background-color: #d1e0ff;
+ color: Navy;
+ border-collapse: collapse;
+ /* border-spacing: 5px; */
+ padding: 5px;
+ margin: 20px 20px 20px 0px;
+ caption-side: top;
+ }
+
+ table
+ {
+ width: 650px;
+ box-shadow: rgba(1, 96, 109, 0.5) 5px 5px 10px;
+ }
+
+ table tr:nth-child(even) {
+ background-color: lightblue;
+ }
+ table tr:nth-child(odd) {
+ background-color: #fff;
+}
+
+ th, tfoot td
+ {
+ height: 40px;
+ background-color: Blue;
+ color: White;
+ font-family: Arial;
+ font-size: 0.9em;
+ }
+
+ td
+ {
+ height: 25px;
+ text-align: right;
+ vertical-align: middle;
+ }
+
+ tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+ tfoot td
+ {
+ height: 25px;
+ background-color: Gray;
+ color: White;
+ font-family: Arial;
+ font-size: 0.9em;
+ }
+
+
+
+ </style>
+</head>
+<body>
+ <h1> Упражнение 7: Таблици - 1 част</h1>
+<table>
+ <caption>Заглавие на таблицата</caption>
+ <tr>
+ <th>Заглавие на колона 1</th>
+ <th>Заглавие на колона 2</th>
+ <th>Заглавие на колона 3</th>
+ </tr>
+ <tr>
+ <td>Стойност 1</td>
+ <td>Стойност 2</td>
+ <td>Стойност 3</td>
+ </tr>
+ <tr>
+ <td>Резултат</td>
+ <td colspan="2">Обединение на две клетки</td>
+ </tr>
+ <tr>
+ <td rowspan="2">Обединение на две клетки в една колонка</td>
+ <td>Стойност 4</td>
+ <td>Стойност 5</td>
+ </tr>
+ <tr>
+ <td>Стойност 5</td>
+ <td>Стойност 7</td>
+ </tr>
+ </table>
+ <table>
+ <thead>
+ <tr>
+ <th>Студент</th>
+ <th>Оценка</th>
+ </tr>
+ </thead>
+ <tfoot>
+ <tr>
+ <td>Среден успех</td>
+ <td>5,50</td>
+ </tr>
+ </tfoot>
+ <tbody>
+ <tr>
+ <td>Атанас Цветков</td>
+ <td>6,00</td>
+ </tr>
+ <tr>
+ <td>Иван Иванов</td>
+ <td>5,00</td>
+ </tr>
+ <tr>
+ <td>Георги Георгиев</td>
+ <td>5,50</td>
+ </tr>
+ </tbody>
+ </table>
+</body>
