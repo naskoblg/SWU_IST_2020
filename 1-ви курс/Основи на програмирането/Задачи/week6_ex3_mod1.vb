@@ -5,8 +5,7 @@ Module Module1
         Randomize()
         n = CInt(Math.Ceiling(Rnd() * 19)) + 1
         Console.WriteLine("----==== G U E S S   T H E   N U M B E R ====----")
-        Do
-            Console.Write("Your chois is between 1 and 20: ")
+               Console.Write("Your chois is between 1 and 20: ")
             x = CInt(Console.ReadLine())
             If x = n Then
                 Console.WriteLine("YESSSS!")
@@ -17,8 +16,6 @@ Module Module1
                     Console.WriteLine("The number is smaller!")
                 End If
             End If
-             Console.Write("Your chois is between 1 and 20: ")
-            x = CInt(Console.ReadLine())
             If x = n Then
                 Console.WriteLine("YESSSS!")
             Else
@@ -28,7 +25,6 @@ Module Module1
                     Console.WriteLine("The number is smaller!")
                 End If
             End If
-        Loop Until x = n
-        Console.ReadKey()
+           Console.ReadKey()
     End Sub
 End Module

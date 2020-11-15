@@ -17,6 +17,15 @@ Module Module1
                     Console.WriteLine("The number is smaller!")
                 End If
             End If
+            If x = n Then
+                Console.WriteLine("YESSSS!")
+            Else
+                If (x < n) Then
+                    Console.WriteLine("The number is bigger!")
+                Else
+                    Console.WriteLine("The number is smaller!")
+                End If
+            End If
         End While
         Console.ReadKey()
     End Sub
