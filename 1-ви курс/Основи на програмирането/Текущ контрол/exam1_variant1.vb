@@ -23,10 +23,11 @@ Module Program
                 a = CInt(revString.Substring(0, 1))  'Последна цифра
                 b = CInt(revString.Substring(1, 1))  'Предпоследна цифра
                 c = CInt(revString.Substring(2, 1))  'Предпредпоследна цифра
-                'If c = 0 Then
-                'Console.WriteLine("Third number from right to left is zero, so I'm picking up the forth one")
-                'c = CInt(revString.Substring(3, 1))
-                'End If
+                If c = 0 Then
+                Console.WriteLine("Third number from right to left is zero, so I'm picking up the forth one")
+                c += 1
+                c *= 4
+                End If
                 '- Съберете числото с последната цифра на вашия факултетен номер
                 'someResult = n + a
                 '- Умножете резултата с предпоследната цифра на вашия факултетен номер
@@ -36,7 +37,7 @@ Module Program
                 'или накратко
                 someResult = ((n + a) * b) / c
                 '- отпечатайте само цялата част на резутата.
-                Console.WriteLine("Result is: {0}", Int(someResult))
+                Console.WriteLine("Result is: {0}", someResult \ 1 )
             End If
             '- ако паролата не е коректна спрямо изискванията да програмата да приключи,
         End If

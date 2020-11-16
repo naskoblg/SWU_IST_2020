@@ -29,11 +29,14 @@ Module Program
                 m = m \ 10
                 c = m Mod 10                                'Предпредпоследна цифра
                 Console.WriteLine("before before last is: {0}", c)
-                'If c = 0 Then
-                'Console.WriteLine("Third number from right to left is zero, so I'm picking up the forth one")
-                'm = m \ 10
-                'c = m Mod 10
-                'End If
+                'ВАЖНО: В задачата има операция деление, което не винаги ще е възможно.
+                If c = 0 Then
+                    Console.WriteLine("Third number from right to left is zero, so we are using the value of the next one => which is 1 multiplied by 4")
+                    'Тогава разделете със следващото по големина цяло число, умножено по 4.
+                    c += 1
+                    c *= 4
+                    Console.WriteLine("NEW before before last is: {0}", c)
+                End If
                 '- Съберете числото с последната цифра на вашия факултетен номер
                 'someResult = n + a
                 '- Умножете резултата с предпоследната цифра на вашия факултетен номер
@@ -43,10 +46,10 @@ Module Program
                 'или накратко
                 someResult = ((n + a) * b) / c
                 '- отпечатайте само цялата част на резутата.
-                Console.WriteLine("Result is: {0}", Int(someResult))
+                Console.WriteLine("Result is: {0}", someResult \ 1)
             End If
-            '- ако паролата не е коректна спрямо изискванията да програмата да приключи,
-        End If
+                '- ако паролата не е коректна спрямо изискванията да програмата да приключи,
+            End If
         '- ако паролата не е коректна спрямо изискванията да програмата да приключи,
     End Sub
 End Module
