@@ -28,11 +28,13 @@ Module Program
                 'c = CInt(revString.Substring(3, 1))
                 'End If
                 '- Съберете числото с последната цифра на вашия факултетен номер
-                someResult = n + a
+                'someResult = n + a
                 '- Умножете резултата с предпоследната цифра на вашия факултетен номер
-                someResult = someResult * b
+                'someResult = someResult * b
                 '- Полученото число разделете на предпредпоследната (третата от дясно наляво) цифра от факултетния ви номер.
-                someResult = someResult / c
+                'someResult = someResult / c
+                'или накратко
+                someResult = ((n + a) * b) / c
                 '- отпечатайте само цялата част на резутата.
                 Console.WriteLine("Result is: {0}", Int(someResult))
             End If
