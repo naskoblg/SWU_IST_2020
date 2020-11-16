@@ -34,8 +34,7 @@ Module Program
                 '- Полученото число разделете на предпредпоследната (третата от дясно наляво) цифра от факултетния ви номер.
                 someResult = someResult / c
                 '- отпечатайте само цялата част на резутата.
-                Console.WriteLine("Result is: {0}", (someResult Mod 10))
-
+                Console.WriteLine("Result is: {0}", Int(someResult))
             End If
             '- ако паролата не е коректна спрямо изискванията да програмата да приключи,
         End If
